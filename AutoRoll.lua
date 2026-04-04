@@ -119,8 +119,8 @@ end
 -- Run the script after key verification
 local function runMainScript()
     -- Your original script logic here
-    local Games = loadstring(game:HttpGet("https://raw.githubusercontent.com/Winnable-Hub/Loader/refs/heads/main/Loader.Lua"))()
-
+    local Games = loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a1b354880539d2cea14156414640c111.lua"))()
+    
     for PlaceID, Execute in pairs(Games) do
         if PlaceID == game.PlaceId then
             loadstring(game:HttpGet(Execute))()
